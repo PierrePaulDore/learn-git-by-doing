@@ -7,8 +7,24 @@
 </head>
 <body>
     <h1>Welcome to Learn Git by Doing</h1>
-    <p>This is the first paragraph. It provides an introduction to the project.</p>
-    <p>This is the second paragraph. It gives more details about what you will learn.</p>
-    <p>This is the third paragraph. It encourages you to start using Git and GitHub.</p>
+    <h2>DS_Store</h2>
+    <p>.DS_Store is a hidden file created by the macOS operating system. It stands for "Desktop Services Store" and is used by the Finder application to store custom attributes of a folder, such as the position of icons, the choice of background image, and other view options.</p>
+    <h3>How to include .DS_Store in .gitignore</h3>
+    <p>To include .DS_Store in a .gitignore file, follow these steps:</p>
+    <p>
+        1. Open your terminal and navigate to your project directory:<br>
+        <code>cd /Users/paul/Documents/WebDev/Project/learn-git-by-doing</code><br><br>
+        2. Create or open the .gitignore file in your project directory. You can use a text editor like nano:<br>
+        <code>nano .gitignore</code><br><br>
+        3. Add .DS_Store to the .gitignore file. If the file is empty, simply type .DS_Store on a new line. If there are other entries, add .DS_Store on a new line:<br>
+        <code>.DS_Store</code><br><br>
+        4. Save and close the file. In nano, you can do this by pressing <code>Ctrl + O</code> to save and <code>Ctrl + X</code> to exit.<br><br>
+        5. Verify that .DS_Store is ignored by Git. You can check this by running:<br>
+        <code>git status</code><br><br>
+        If .DS_Store was previously tracked, you might need to remove it from the repository history:<br>
+        <code>git rm --cached .DS_Store</code><br>
+        <code>git commit -m "Remove .DS_Store from repository"</code>
+    </p>
+    <p>Now, .DS_Store files will be ignored by Git and won't be tracked in your repository.</p>
 </body>
 </html>
